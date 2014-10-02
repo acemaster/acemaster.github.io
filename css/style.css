@@ -138,6 +138,12 @@ ul.social-icons li a:hover {
 	margin-bottom: 15px;
 	position: relative;
 	padding: 0 2px;
+	 clear: both;
+	  -webkit-animation: progress 2s 1 forwards;
+    -moz-animation: progress 2s 1 forwards;
+    -ms-animation: progress 2s 1 forwards;
+    animation: progress 2s 1 forwards;
+	
 }
 .expand {
 	border-radius: 10px;
@@ -145,6 +151,17 @@ ul.social-icons li a:hover {
 	margin: 2px 0;
 	padding: 4px 0 4px 5px;
 	position: absolute;
+	    background: url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
+    -moz-opacity: 0.25;
+    -khtml-opacity: 0.25;
+    opacity: 0.25;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);
+    filter: alpha(opacity=25);
+
+	
+}
+
 }
 .skills .span5 h3 {
 	font-size: 18.5px;
