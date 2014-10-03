@@ -9,11 +9,11 @@ a.brand img {
 }
 .profile h2, .skills h2, .work h2, .resume h2 {
 	font-weight:normal;
-	color: #39D084;
+	color: #59A0DE;
 }
 /***** Profile *****/
 	.profile h1 {
-	color:#39d084;
+	color:#68C4E3;
 	font-weight: normal;
 }
 .profile h3 {
@@ -33,7 +33,7 @@ a.hire-me {
 	display: inline-block;
  *display: inline;
 	padding:20px 60px;
-	background:#39d084;
+	background:#59A0DE;
 	color:#fff;
 	text-transform:uppercase;
 	font-size:26px;
@@ -44,7 +44,7 @@ a.hire-me {
 }
 a.hire-me:hover {
 	text-decoration:none;
-	background:#11d170;
+	background:#1177D1;
 }
 .social {
 	text-align:center;
@@ -138,11 +138,7 @@ ul.social-icons li a:hover {
 	margin-bottom: 15px;
 	position: relative;
 	padding: 0 2px;
-	 clear: both;
-	  -webkit-animation: progress 2s 1 forwards;
-    -moz-animation: progress 2s 1 forwards;
-    -ms-animation: progress 2s 1 forwards;
-    animation: progress 2s 1 forwards;
+	 
 	
 }
 .expand {
@@ -151,13 +147,7 @@ ul.social-icons li a:hover {
 	margin: 2px 0;
 	padding: 4px 0 4px 5px;
 	position: absolute;
-	    background: url('http://www.cssdeck.com/uploads/media/items/7/7uo1osj.gif') repeat-x;
-    -moz-opacity: 0.25;
-    -khtml-opacity: 0.25;
-    opacity: 0.25;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);
-    filter: alpha(opacity=25);
+	 
 
 	
 }
@@ -173,52 +163,52 @@ ul.social-icons li a:hover {
 	float:right;
 }
 .ps2 {
-	width:90%;
+	width:0%;
 	background:#30a5dc;
-	-moz-animation:html5 2s ease-out;
-	-webkit-animation:html5 2s ease-out;
+	-moz-animation:html5 2s linear infinite;
+	-webkit-animation:html5 2s linear infinite;
 }
 .ai2 {
-	width:60%;
+	width:0%;
 	background:#ee742b;
-	-moz-animation:css3 2s ease-out;
-	-webkit-animation:css3 2s ease-out;
+	-moz-animation:css3 2s linear infinite;
+	-webkit-animation:css3 2s linear infinite;
 }
 .html2 {
-	width:75%;
+	width:0%;
 	background:#f04949;
-	-moz-animation:jquery 2s ease-out;
-	-webkit-animation:jquery 2s ease-out;
+	-moz-animation:jquery 2s linear infinite;
+	-webkit-animation:jquery 2s linear infinite;
 }
 .css2 {
-	width:85%;
+	width:0%;
 	background:#39d084;
-	-moz-animation:photoshop 2s ease-out;
-	-webkit-animation:photoshop 2s ease-out;
+	-moz-animation:photoshop 2s linear infinite;
+	-webkit-animation:photoshop 2s linear infinite;
 }
 .js2 {
-	width:75%;
+	width:0%;
 	background:#FF0;
-	-moz-animation:photoshop 2s ease-out;
-	-webkit-animation:photoshop 2s ease-out;
+	-moz-animation:photoshop 2slinear infinite;
+	-webkit-animation:photoshop 2s linear infinite;
 }
 .p2 {
-	width:65%;
+	width:0%;
 	background:#00F;
-	-moz-animation:photoshop 2s ease-out;
-	-webkit-animation:photoshop 2s ease-out;
+	-moz-animation:photoshop 2s linear infinite;
+	-webkit-animation:photoshop 2s linear infinite;
 }
 .dw2 {
-	width:95%;
+	width:0%;
 	background:#44BE10;
-	-moz-animation:photoshop 2s ease-out;
-	-webkit-animation:photoshop 2s ease-out;
+	-moz-animation:photoshop 2s linear infinite;
+	-webkit-animation:photoshop 2s linear infinite;
 }
 .c2 {
-	width:95%;
+	width:0%;
 	background:#60F;
-	-moz-animation:photoshop 2s ease-out;
-	-webkit-animation:photoshop 2s ease-out;
+	-moz-animation:photoshop 2s linear infinite;
+	-webkit-animation:photoshop 2slinear infinite;
 }
 
  @-moz-keyframes ps2 {
