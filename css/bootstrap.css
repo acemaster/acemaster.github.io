@@ -3031,9 +3031,9 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 .navbar .btn-navbar {
 	display: none;
 	float: right;
-	padding: 32px;
+	padding: 10px;
 	color: #ffffff;
-	background-color: #39D084;
+	background-color: #485FE0;
  *background-color: #e5e5e5;
 /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 }
