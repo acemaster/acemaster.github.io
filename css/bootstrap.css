@@ -1561,7 +1561,7 @@ legend + .control-group {
 	padding-left: 180px;
 }
 .btn {
-	display: inline-block;
+	display: inline;
  *display: inline;
   /* IE7 inline-block hack */
 
@@ -5473,7 +5473,7 @@ ul.work-images li div {
  height: 0;
 }
  .navbar .btn-navbar {
- display: block;
+ display: inline;
 }
  .navbar-static .navbar-inner {
  padding-left: 10px;
