@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<poem>
+  <node>
+  <element>Array</element>
+  <action>Traverse it</action>
+  </node>
+  <node>
+  <element>Tree</element>
+  <action>Climb it</action>
+  </node>
+</poem>

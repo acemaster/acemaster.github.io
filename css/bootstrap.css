@@ -471,6 +471,7 @@ a:hover, a:focus {
 .container {
 	margin-right: auto;
 	margin-left: auto;
+	z-index:2;
  *zoom: 1;
 }
 .container:before, .container:after {
@@ -4602,6 +4603,7 @@ button.close {
  .container {
  width: auto;
  padding:0 20px;
+ opacity:0.6;
 }
  .row-fluid {
  width: 100%;
