@@ -29,7 +29,7 @@
 body {
   padding-top: 80px;
   color: #34495e;
-  background: #f5f5f5;
+  background: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
@@ -75,8 +75,9 @@ a:focus {
   min-width: 180px;
 }
 body > section {
-  padding: 50px 0;
+  padding: 20px 0;
 }
+.love,
 .turquoise,
 .green-sea,
 .sun-flower,
@@ -98,6 +99,7 @@ body > section {
 .asbestos {
   color: #fff;
 }
+.love h1,
 .turquoise h1,
 .green-sea h1,
 .sun-flower h1,
@@ -117,6 +119,7 @@ body > section {
 .midnight-blue h1,
 .concrete h1,
 .asbestos h1,
+.love h2,
 .turquoise h2,
 .green-sea h2,
 .sun-flower h2,
@@ -136,6 +139,7 @@ body > section {
 .midnight-blue h2,
 .concrete h2,
 .asbestos h2,
+.love h3,
 .turquoise h3,
 .green-sea h3,
 .sun-flower h3,
@@ -155,6 +159,7 @@ body > section {
 .midnight-blue h3,
 .concrete h3,
 .asbestos h3,
+.love h4,
 .turquoise h4,
 .green-sea h4,
 .sun-flower h4,
@@ -174,6 +179,7 @@ body > section {
 .midnight-blue h4,
 .concrete h4,
 .asbestos h4,
+.love h5,
 .turquoise h5,
 .green-sea h5,
 .sun-flower h5,
@@ -193,6 +199,7 @@ body > section {
 .midnight-blue h5,
 .concrete h5,
 .asbestos h5,
+.love h6,
 .turquoise h6,
 .green-sea h6,
 .sun-flower h6,
@@ -214,6 +221,7 @@ body > section {
 .asbestos h6 {
   color: #fff;
 }
+.love small,
 .turquoise small,
 .green-sea small,
 .sun-flower small,
@@ -234,6 +242,9 @@ body > section {
 .concrete small,
 .asbestos small {
   color: rgba(255, 255, 255, 0.8);
+}
+.love{
+	background-color: #c61b21;
 }
 .turquoise {
   background-color: #1abc9c;
