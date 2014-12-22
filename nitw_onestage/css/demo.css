@@ -1,0 +1,20 @@
+@import url('reset.css');
+
+/* General Codrops Demo Style */
+
+/* Header Style */
+
+.content{
+	margin:0px 25px 30px 25px;
+}
+@media screen and (max-width: 640px) {
+	.header a{
+		display:block;
+		text-align:center;
+		font-size:10px;
+		text-shadow:none;
+	}
+	.header span.right_ab{
+		float:none;
+	}
+}

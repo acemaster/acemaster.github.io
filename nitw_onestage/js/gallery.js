@@ -107,8 +107,8 @@ $(function() {
 				
 				// top right buttons: hide / show carousel
 				
-				var $viewfull	= $('<a href="#" class="rg-view-full"></a>'),
-					$viewthumbs	= $('<a href="#" class="rg-view-thumbs rg-view-selected"></a>');
+				var $viewfull	= $('<a href="#" style="display:none" class="rg-view-full"></a>'),
+					$viewthumbs	= $('<a href="#" style="display:none" class="rg-view-thumbs rg-view-selected"></a>');
 				
 				$rgGallery.prepend( $('<div class="rg-view"/>').append( $viewfull ).append( $viewthumbs ) );
 				
