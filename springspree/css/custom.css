@@ -316,3 +316,19 @@ a:hover {
 }
 
 .non-semantic-protector { position: relative; z-index: 1; }
+
+.book{
+	height:100%;
+}
+.green{
+	background-color:#0F0;
+}
+.red{
+	background-color:#33C;
+}
+.blue{
+	background-color:#009;
+}
+.yellow{
+	background-color:#CF0;
+}
