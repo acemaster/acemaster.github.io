@@ -334,115 +334,87 @@ a:hover {
 }
 /* custom inclusion of right, left and below tabs */
 
-.tabs-below > .nav-tabs,
-.tabs-right > .nav-tabs,
-.tabs-left > .nav-tabs {
-  border-bottom: 0;
-}
-
-.tab-content > .tab-pane,
-.pill-content > .pill-pane {
-  display: none;
-}
-
-.tab-content > .active,
-.pill-content > .active {
-  display: block;
-}
-
-.tabs-below > .nav-tabs {
-  border-top: 1px solid #ddd;
-}
-
-.tabs-below > .nav-tabs > li {
-  margin-top: -1px;
-  margin-bottom: 0;
-}
-
-.tabs-below > .nav-tabs > li > a {
-  -webkit-border-radius: 0 0 4px 4px;
-     -moz-border-radius: 0 0 4px 4px;
-          border-radius: 0 0 4px 4px;
-}
-
-.tabs-below > .nav-tabs > li > a:hover,
-.tabs-below > .nav-tabs > li > a:focus {
-  border-top-color: #ddd;
-  border-bottom-color: transparent;
-}
-
-.tabs-below > .nav-tabs > .active > a,
-.tabs-below > .nav-tabs > .active > a:hover,
-.tabs-below > .nav-tabs > .active > a:focus {
-  border-color: transparent #ddd #ddd #ddd;
-}
-
-.tabs-left > .nav-tabs > li,
-.tabs-right > .nav-tabs > li {
-  float: none;
-}
-
-.tabs-left > .nav-tabs > li > a,
-.tabs-right > .nav-tabs > li > a {
-  min-width: 74px;
-  margin-right: 0;
-  margin-bottom: 3px;
-}
-
-.tabs-left > .nav-tabs {
-  float: left;
-  margin-right: 19px;
-  border-right: 1px solid #ddd;
-}
-
-.tabs-left > .nav-tabs > li > a {
-  margin-right: -1px;
-  -webkit-border-radius: 4px 0 0 4px;
-     -moz-border-radius: 4px 0 0 4px;
-          border-radius: 4px 0 0 4px;
-}
-
-.tabs-left > .nav-tabs > li > a:hover,
-.tabs-left > .nav-tabs > li > a:focus {
-  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
-}
-
-.tabs-left > .nav-tabs .active > a,
-.tabs-left > .nav-tabs .active > a:hover,
-.tabs-left > .nav-tabs .active > a:focus {
-  border-color: #ddd transparent #ddd #ddd;
-  *border-right-color: #ffffff;
-}
-
-.tabs-right > .nav-tabs {
-  float: right;
-  margin-left: 19px;
-  border-left: 1px solid #ddd;
-}
-
-.tabs-right > .nav-tabs > li > a {
-  margin-left: -1px;
-  -webkit-border-radius: 0 4px 4px 0;
-     -moz-border-radius: 0 4px 4px 0;
-          border-radius: 0 4px 4px 0;
-}
-
-.tabs-right > .nav-tabs > li > a:hover,
-.tabs-right > .nav-tabs > li > a:focus {
-  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
-}
-
-.tabs-right > .nav-tabs .active > a,
-.tabs-right > .nav-tabs .active > a:hover,
-.tabs-right > .nav-tabs .active > a:focus {
-  border-color: #ddd #ddd #ddd transparent;
-  *border-left-color: #ffffff;
-}
 
 
 .bottom-bar{
-	position: relative;
-	background-color: #D35400;
-	width: 30%;
-	z-index: 1;
+	background-color: #2980B9;
+	margin-top: 10px;
 }
+
+.event{
+     box-shadow: -5px 5px 5px #888888;
+     background-color: #3498DB;
+     position: fixed;
+     width:50px;
+     margin: 5px; 
+     height: 50px;
+     border-radius: 50%;
+     bottom: 20px;
+     right: 10px;
+     z-index: 5000;
+
+}
+
+#mySkinnedTabWrapper{
+  border: 1px solid #aaa;
+  border-radius: 4px 4px 4px 4px;
+  padding: .2em .2em 0;
+}
+
+#mySkinnedTabWrapper>ul {
+  border: 1px solid #aaa;
+  background: #ccc url(http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+  color: #222;
+  font-weight: bold;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  padding: .2em .2em 0;
+  margin: 0px;
+}
+
+#mySkinnedTabWrapper>ul>li {
+  border: 1px solid #ddd;
+  border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  margin: 1px .2em 0 0;
+  border: 1px solid #d3d3d3;
+  background: #e6e6e6 url(http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+  font-weight: normal;
+}
+
+#mySkinnedTabWrapper>ul>li>a {
+  margin-right: 0px;
+  padding: .5em 1em;
+}
+
+#mySkinnedTabWrapper>ul>li>a,
+#mySkinnedTabWrapper>ul>li>a:link,
+#mySkinnedTabWrapper>ul>li>a:visited {
+  color: #555;
+  text-decoration: none;
+}
+
+#mySkinnedTabWrapper>ul>li>a:hover {
+  color: #212121;
+  text-decoration: none;
+}
+
+#mySkinnedTabWrapper>ul>li.active {
+  border-bottom-color: #fff;
+  margin-bottom: -1px;
+  padding-bottom: 2px;
+  border-bottom-width: 0;
+  background-image:  -moz-linear-gradient(bottom, #fff 2px, transparent 2px);
+  background-image:  -o-linear-gradient(bottom, #fff 2px, transparent 2px);
+  background-image:  -webkit-linear-gradient(bottom, #fff 2px, transparent 2px);
+  background-image:  linear-gradient(bottom, #fff 2px, transparent 2px);
+}
+
+#mySkinnedTabWrapper>div {
+  padding: 10px 10px 10px 10px;
+}
+
+
+
