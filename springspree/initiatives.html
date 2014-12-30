@@ -124,7 +124,10 @@
                 <div class="event" id="two"></div>
                 <div class="event" id="three"></div>
                 <div class="event" id="four"></div>
-                <div class="event" id="clickme"></div>
+                <div class="event" id="five"></div>
+                <div id='line'>
+                 <span class='local'> </span>
+               </div>
 
 			</div>
 
@@ -145,24 +148,72 @@
 		</script>
         <script>
              var $count=0;
-              $("#clickme").click(function(){
-                  if($count%2==0)
-                  {
-                  $("#one").animate({right:"10%"});
-                  $("#two").animate({right:"30%"});
-                  $("#three").animate({right:"50%"});
-                  $("#four").animate({right:"70%"});
-                  }
-                  else
-                  {
-                      $("#one").animate({right:"1%"});
-                      $("#two").animate({right:"1%"});
-                      $("#three").animate({right:"1%"});
-                      $("#four").animate({right:"1%"});
-                  }
+             var $container = $( '#container' ),
+		         $bookBlock = $( '#bb-bookblock' ),
+		         $items = $bookBlock.children();
+              $("#bb-nav-next").click(function(){
+                 if($count==3)
+                     $("#one").css("background-color","black");
+                else if($count==2)
+                      $("#two").css("background-color","black");
+                else if($count==1)
+                      $("#three").css("background-color","black");
+                else if($count==0)
+                      $("#four").css("background-color","black");
+                else if($count==4)
+                      $("#five").css("background-color","black");
+                $(".local").animate({width:"+=20%"});
                   $count=$count+1;
 
                                     });
+             $("#bb-nav-prev").click(function(){
+                  $count=$count-1;
+                 if($count==3)
+                     $("#one").css("background-color","#ffffff");
+                else if($count==2)
+                      $("#two").css("background-color","#ffffff");
+                else if($count==1)
+                      $("#three").css("background-color","#ffffff");
+                else if($count==0)
+                      $("#four").css("background-color","#ffffff");
+                else if($count==4)
+                      $("#five").css("background-color","#ffffff");
+                $(".local").animate({width:"-=20%"});
+
+
+                                    });
+           $items.on(
+			'swipeleft',function() {
+                    if($count==3)
+                     $("#one").css("background-color","black");
+                else if($count==2)
+                      $("#two").css("background-color","black");
+                else if($count==1)
+                      $("#three").css("background-color","black");
+                else if($count==0)
+                      $("#four").css("background-color","black");
+                else if($count==4)
+                      $("#five").css("background-color","black");
+                $(".local").animate({width:"+=20%"});
+                  $count=$count+1;
+
+				});
+             $items.on(
+			'swipe',function() {
+				 if($count==3)
+                     $("#one").css("background-color","black");
+                else if($count==2)
+                      $("#two").css("background-color","black");
+                else if($count==1)
+                      $("#three").css("background-color","black");
+                else if($count==0)
+                      $("#four").css("background-color","black");
+                else if($count==4)
+                      $("#five").css("background-color","black");
+                $(".local").animate({width:"-=20%"});
+                  $count=$count-1;
+			});
+
 
 
 
