@@ -9,7 +9,7 @@
 .cc_item{
 	text-align:center;
 	width:20%;
-	height:600px;
+	height:100%;
 	float:left;
 	border-bottom:1px solid #000;
 	background:#444 ;
@@ -17,17 +17,18 @@
 	-moz-box-shadow:3px -3px 10px #000;
 	-webkit-box-shadow:3px -3px 10px #000;
 	box-shadow:3px -3px 10px #000;
+	transform: rotate(2deg);
 	
 }
 span.cc_title{
 	color:#fff;
-	font-size:16px;
+	font-size:12px;
 	top:200px;
 	left:5px;
 	position:absolute;
 	padding:3px 0px;
 	background:#111;
-	width:130px;
+	width:80%;
 	display:block;
 	z-index:11;
 	-moz-box-shadow:1px 1px 4px #000;
@@ -39,7 +40,7 @@ span.cc_title{
 	width:140px;
 	margin:0;
 	padding:0;
-	height:0px; /*increase to 200px to slide up*/
+	height:0%; /*increase to 200px to slide up*/
 	overflow:hidden;
 	text-align:left;
 	background:#000;
@@ -56,17 +57,17 @@ span.cc_title{
 }
 .cc_item img{
 	position:absolute;
-	width:20%px;
-	height:600px;
-	top:-600px;
+	width:100%;
+	height:100%;
+	top:-100%;
 	left:0px;
 }
 .cc_content{
 	width:80%;
-	height:600px;
+	height:100%;
 	border-bottom:1px solid #000;
 	position:absolute;
-	left:-700px;
+	left:-100%;
 	background: #2C3E50 ;
 	overflow:hidden;
 	-moz-box-shadow:4px 0 7px #000;

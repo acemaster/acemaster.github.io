@@ -8,6 +8,7 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 		<script src="js/cufon-yui.js" type="text/javascript"></script>
 		<script src="js/Liberation_Sans.font.js" type="text/javascript"></script>
+	    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 		<script type="text/javascript">
 			Cufon.replace('span');
 			Cufon.replace('li');
@@ -16,7 +17,7 @@
 		</script>
         <style>
 			body{
-				background:#000 url(img/stripe.gif) repeat top left;
+				background:#0d0d0d;
 				margin:0;
 				padding:0;
 			}
@@ -50,9 +51,9 @@
 
     <body>
 
-		<div class="title"></div>
+		
 		<div id="cc_menu" class="cc_menu">
-			<div class="cc_item" style="z-index:5; background: url(img/11.jpg)" >
+			<div class="cc_item" style="z-index:5; background: url(img/11.jpg); background-repeat:no-repeat;background-size:contain;background-position:center;" >
 				<img src="img/1.jpg" alt="image" />
 				<span class="cc_title">Coke Studio</span>
 				<div class="cc_submenu">
@@ -62,7 +63,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="cc_item" style="z-index:4; background: url(img/22.jpg)">
+			<div class="cc_item" style="z-index:4; background: url(img/22.jpg);background-repeat:no-repeat;background-size:contain;background-position:center;">
 				<img src="img/2.jpg" alt="image" />
 				<span class="cc_title">Allure</span>
 				<div class="cc_submenu">
@@ -73,7 +74,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="cc_item" style="z-index:3;background: url(img/33.jpg)">
+			<div class="cc_item" style="z-index:3;background: url(img/33.jpg);background-repeat:no-repeat;background-size:contain;background-position:center;">
 				<img src="img/3.jpg" alt="image" />
 				<span class="cc_title">Group Dance</span>
 				<div class="cc_submenu">
@@ -83,7 +84,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="cc_item" style="z-index:2; background: url(img/44.jpg)">
+			<div class="cc_item" style="z-index:2; background: url(img/44.jpg);background-repeat:no-repeat;background-size:contain;background-position:center;">
 				<img src="img/4.jpg" alt="image" />
 				<span class="cc_title">Initiatives</span>
 				<div class="cc_submenu">
@@ -93,7 +94,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="cc_item" style="z-index:1; background: url(img/55.jpg)">
+			<div class="cc_item" style="z-index:1; background: url(img/55.jpg);background-repeat:no-repeat;background-size:contain;background-position:center;">
 				<img src="img/5.jpg" alt="image" />
 				<span class="cc_title">World</span>
 				<div class="cc_submenu">
@@ -117,7 +118,10 @@
 			</div>
 		</div>
         <!-- The JavaScript -->
+        <script src="js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
         <script type="text/javascript">
+            $(".cc_menu").css("height",screen.availHeight-70);
+
             $(function() {
 				//all the menu items
 				var $items 		= $('#cc_menu .cc_item');
@@ -164,7 +168,7 @@
 					//img
 					$this.find('img').stop().animate({'top':'0px'},400);
 					//cc_submenu ul
-					$this.find('.cc_submenu > ul').stop().animate({'height':'200px'},400);
+					$this.find('.cc_submenu > ul').stop().animate({'height':'40%'},400);
 					},200);
 				}
 				
@@ -173,7 +177,7 @@
 					var $this = $(this);
 					clearTimeout(menu_time);
 					//img
-					$this.find('img').stop().animate({'top':'-600px'},400);
+					$this.find('img').stop().animate({'top':'-100%'},400);
 					//cc_submenu ul
 					$this.find('.cc_submenu > ul').stop().animate({'height':'0px'},400);
 				}
@@ -211,7 +215,7 @@
 				that might be displayed
 				*/
 				function unfold(){
-					$('#cc_content').stop().animate({'left':'-700px'},600,function(){
+					$('#cc_content').stop().animate({'left':'-100%'},600,function(){
 						var d = 100;
 						var step = 0;
 					$items.each(function(){
@@ -219,7 +223,7 @@
 							
 							$item.find('img')
 								 .stop()
-								 .animate({'top':'-600px'},200)
+								 .animate({'top':'-100%'},200)
 								 .andSelf()
 								 .find('.cc_submenu > ul')
 								 .stop()
