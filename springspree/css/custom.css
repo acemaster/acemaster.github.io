@@ -59,7 +59,9 @@ a:hover {
 }
 
 .menu-panel {
-	background: #000;
+	background-image: url("../img/1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
 	width: 240px;
 	height: 100%;
 	position: fixed;
@@ -91,15 +93,19 @@ a:hover {
 	color: #fff;
 	font-size: 1.1em;
 	line-height: 3.5;
+    text-align: center;
 	padding: 0 20px;
 	cursor: pointer;
 	background: #6a6465;
+    opacity: 0.7;
 	border-bottom: 1px solid #6a6465;
 }
 
 .menu-toc li a:hover,
 .menu-toc li.menu-toc-current a{
 	background: #000;
+    opacity: 0.5;
+    text-align: center;
 }
 .list_img img{
 	border:solid;
@@ -350,7 +356,7 @@ a:hover {
      height: 50px;
      border-radius: 50%;
      bottom: 20px;
-     right: 10px;
+     right: 1%;
      z-index: 5000;
 
 }
