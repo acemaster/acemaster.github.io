@@ -151,6 +151,7 @@ a, button {
 		-o-transition: border .5s;
 		-ms-transition: border .5s;
 		transition: border .5s;
+        opacity: 0.8;
 	}
 
 	.nav a {

@@ -12,7 +12,7 @@
 	font-style: normal;
 }
 
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;  }
 body, html { font-size: 15px; padding: 0; margin: 0;}
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -21,8 +21,9 @@ body, html { font-size: 15px; padding: 0; margin: 0;}
 
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
-	color: #000000;
+	color: #ffffff;
 	background: url(../img/bg.jpg);
+    height: 100%;
 }
 
 a {
@@ -63,7 +64,7 @@ a:hover {
 .container > header span {
 	display: block;
 	font-size: 60%;
-	color: #292928;
+	color: #ffffff;
 	padding: 0 0 0.6em 0.1em;
 }
 
@@ -134,3 +135,18 @@ a:hover {
 	}
 }
 
+
+video#bgvid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url(../img/bg.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
