@@ -16,6 +16,7 @@
             <source src="img/video.webm" type="video/webm">
             </video>
             <img src="../springspree/img/play.png" id="vidpause"/>
+            <div id="pausediv">Pause the video</div>
 			<header>
 				<h1 style="font-color:#fffff">SpringSpree 2015 <span>Food, Dance, Art, International</span></h1>
 			</header>
@@ -107,6 +108,7 @@
 			}
         var vid = document.getElementById("bgvid");
 var pauseButton = document.getElementById("vidpause");
+var pausediv=document.getElementById("pausediv");
 function vidFade() {
 vid.classList.add("stopfade");
 }
@@ -120,10 +122,10 @@ pauseButton.addEventListener("click", function() {
 vid.classList.toggle("stopfade");
 if (vid.paused) {
 vid.play();
-pauseButton.innerHTML = "Pause";
+pausediv.innerHTML = "Pause the Video";
 } else {
 vid.pause();
-pauseButton.innerHTML = "Paused";
+pausediv.innerHTML = "Continue the video";
 }
 })
 		</script>

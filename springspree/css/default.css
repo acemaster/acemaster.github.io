@@ -165,6 +165,15 @@ video#bgvid { display: none; }
     height: 6%;
 
 }
+.stopfade { opacity: 0;
+            transition: 2s opacity;}
 
 
 
+
+#pausediv {
+    color: #ffffff;
+    position: absolute;
+    bottom: 3%;
+    right: 4%;
+}
