@@ -155,3 +155,16 @@ video#bgvid {
 html { background: url(../img/bg.jpg) #000 no-repeat center center fixed; }
 video#bgvid { display: none; }
 }
+
+#vidpause {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000;
+    width: 3%;
+    height: 6%;
+
+}
+
+
+

@@ -15,6 +15,7 @@
 		<video autoplay loop poster="img/bg.jpg" id="bgvid">
             <source src="img/video.webm" type="video/webm">
             </video>
+            <img src="../springspree/img/play.png" id="vidpause"/>
 			<header>
 				<h1 style="font-color:#fffff">SpringSpree 2015 <span>Food, Dance, Art, International</span></h1>
 			</header>
@@ -104,6 +105,27 @@
 					changeClass(mobileButton, 'navtoogle active', 'navtoogle');
 				}
 			}
+        var vid = document.getElementById("bgvid");
+var pauseButton = document.getElementById("vidpause");
+function vidFade() {
+vid.classList.add("stopfade");
+}
+vid.addEventListener('ended', function() {
+// only functional if "loop" is removed
+vid.pause();
+// to capture IE10
+vidFade();
+});
+pauseButton.addEventListener("click", function() {
+vid.classList.toggle("stopfade");
+if (vid.paused) {
+vid.play();
+pauseButton.innerHTML = "Pause";
+} else {
+vid.pause();
+pauseButton.innerHTML = "Paused";
+}
+})
 		</script>
 	</body>
 </html>
