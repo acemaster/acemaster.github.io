@@ -153,5 +153,5 @@ video#bgvid {
 
 @media screen and (max-device-width: 800px) {
 html { background: url(../img/bg.jpg) #000 no-repeat center center fixed; }
-#bgvid { display: none; }
+video#bgvid { display: none; }
 }
