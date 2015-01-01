@@ -167,10 +167,6 @@ video#bgvid { display: none; }
 }
 .stopfade { opacity: 0;
             transition: 2s opacity;}
-
-
-
-
 #pausediv {
     color: #ffffff;
     position: absolute;
