@@ -11,12 +11,15 @@
 		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
 		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
 		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+        <link rel="stylesheet" href="css/style2.css" />
 		<script src="js/modernizr.custom.79639.js"></script>
 	</head>
 	<body>
+        
+       
 		<div id="container" class="container">
 
-			<div class="menu-panel">
+<!--			<div class="menu-panel">
             	<div align="center" class="list_img">
                 	<img src="img/logo.png">
                 </div>
@@ -29,11 +32,35 @@
 					<li><a href="#item2">Initiative 2</a></li>
 					<li><a href="#item3">Initiative 3</a></li>
 				</ul>
-			</div>
+			</div>-->
+        <div class="buttons">
+            <button class="nav-toggler toggle-push-bottom">Hello</button><br>
+        </div>
+        <nav class="menu push-menu-bottom">
+        <ul>
+        <li><img class="img-responsive" src="img/logo.png"></li>
+       
+        <li><a href="#item2">Initiative 1</a></li>
+        <li><a href="#">Initiative 2</a></li>
+        <li><a href="#">Cucumber</a></li>
+        <li><a href="#">Kale</a></li>
+        <li><a href="#">Celery</a></li>
+        <li><button class="close-menu">&darr;</button></li>
+        </ul>
+        </nav>
+       
 
 			<div class="bb-custom-wrapper">
 				<div id="bb-bookblock" class="bb-bookblock">
-					<div class="bb-item" id="item1">
+                    <div class="bb-item" id="item1">
+						<div class="content">
+							<div class="scroller">
+                                <img class="img-responsive" src="/img/Logo.jpg" id="imgfirst">
+                            </div>
+						</div>
+					</div>
+                    
+					<div class="bb-item" id="item2">
 						<div class="content">
 							<div class="scroller">
                             	<div class="container">
@@ -72,20 +99,20 @@
 
                         </div>
 					</div>
-					<div class="bb-item" id="item2">
+					<div class="bb-item" id="item3">
 						<div class="content">
 							<div class="scroller">
-								<h2>Pro Show 2</h2>
+								<h2>Initiative 2</h2>
 								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
 
 
 							</div>
 						</div>
 					</div>
-					<div class="bb-item" id="item3">
+					<div class="bb-item" id="item4">
 						<div class="content">
 							<div class="scroller">
-								<h2>Proshow 3</h2>
+								<h2>Initiative 3</h2>
 							   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc</p>
 							</div>
 						</div>
@@ -93,14 +120,9 @@
 
 
 
-				<nav>
-					<span id="bb-nav-prev">&larr;</span>
-					<span id="bb-nav-next">&rarr;</span>
-				</nav>
+				
 
-				<span id="tblcontents" class="menu-button">Table of Contents</span>
-
-                <div class="event" id="one"></div>
+                <!--<div class="event" id="one"></div>
                 <div class="event" id="two"></div>
                 <div class="event" id="three"></div>
                 <div class="event" id="four"></div>
@@ -109,7 +131,8 @@
                  <span class='local'> </span>
                </div>
 
-			</div>
+			</div>-->
+        
 
 		</div><!-- /container -->
 
@@ -120,13 +143,26 @@
 		<script src="js/jquery.bookblock.js"></script>
 		<script src="js/page.js"></script>
         <script src="js/bootstrap.js"></script>
-		<script>
+        <script src="js/classie.js"></script>
+        <script src="js/nav.js"></script>
+
+        <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34160351-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+	<script>
 			$(function() {
 
 				Page.init();
 			});
 		</script>
-        <script>
+        <!--<script>
              var $count=0;
              var $container = $( '#container' ),
 		         $bookBlock = $( '#bb-bookblock' ),
@@ -197,6 +233,6 @@
 
 
 
-        </script>
+        </script>-->
 	</body>
 </html>
