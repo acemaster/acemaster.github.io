@@ -462,3 +462,54 @@ a:hover {
 
 }
 
+
+#svgdiv {
+    position: relative;
+    width: 100%;   
+    height: 100%;
+    top: 300px;
+    left: 2%;
+    align-content: center;
+    z-index: 9000;
+}
+
+#svgele {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     z-index: 9000;
+}
+
+.title {
+     stroke-dasharray: 500;
+                stroke-dashoffset: 500;
+        animation: draw 5s linear forwards;
+        -webkit-animation: draw 8s linear forwards;
+        -moz-animation: draw 8s linear forwards;
+        -o-animation: draw 8s linear forwards;
+        font-weight: bold;
+        font-family: Amatic SC;
+        -inkscape-font-specification: Amatic SC Bold"
+        }
+        @keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+            }
+        }
+        @-webkit-keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+            }
+        }
+
+        @-moz-keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+            }
+        }
+        @-o-keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+            }
+        }
+}

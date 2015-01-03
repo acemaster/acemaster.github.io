@@ -74,18 +74,17 @@ section.toggle {
     position: fixed;
     text-align: center;
     z-index: 5000;
-    bottom: 40px;
-    left: 42%;
+    top: 0px;
+    right: 5%;
     width: 10%;
     
 }
 .buttons button {
     position: fixed;
     color: #fff;
-    background: url(../img/ribbonbook.png) no-repeat;
+    background: url(../img/ribbon2.png) no-repeat;
     background-position: top;
-    box-shadow: 
-    width: 10%;
+    width: 15%;
     height: 100%;
     z-index: 6000;
 }
