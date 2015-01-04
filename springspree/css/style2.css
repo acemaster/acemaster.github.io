@@ -85,7 +85,7 @@ section.toggle {
     background: url(../img/ribbon2.png) no-repeat;
     background-position: top;
     width: 15%;
-    height: 100%;
+    height: 50%;
     z-index: 6000;
 }
 
