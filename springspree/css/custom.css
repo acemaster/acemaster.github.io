@@ -467,8 +467,9 @@ a:hover {
     display: inline-block;
     position: relative;
     width: 100%;   
-    height: 100px;
+    height: 1000px;
     margin-top: 50px;
+    margin-left: 300px;
     z-index: 9000;
     overflow: hidden;
     vertical-align: middle;
@@ -480,12 +481,13 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     z-index: 9000;
 }
 
 .title {
-     stroke-dasharray: 500;
-                stroke-dashoffset: 500;
+     stroke-dasharray: 2000;
+                stroke-dashoffset: 2000;
         animation: draw 5s linear forwards;
         -webkit-animation: draw 8s linear forwards;
         -moz-animation: draw 8s linear forwards;
