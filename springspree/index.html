@@ -15,7 +15,7 @@
 		<video autoplay loop poster="img/bg.jpg" id="bgvid">
             <source src="img/video.webm" type="video/webm">
             </video>
-            <img src="../springspree/img/play.png" id="vidpause"/>
+            <img src="../springspree/img/Pause.png" id="vidpause"/>
             <div id="pausediv">Pause the video</div>
 			<header>
 				<h1 style="font-color:#fffff">SpringSpree 2015 <span>Food, Dance, Art, International</span></h1>
@@ -68,9 +68,6 @@
 			</div>
             <br><br><br><br>
             <div>
-
-
-
             </div>
 		</div><!-- /container -->
 		<script>
@@ -121,9 +118,11 @@ vid.classList.toggle("stopfade");
 if (vid.paused) {
 vid.play();
 pausediv.innerHTML = "Pause the Video";
+pauseButton.src="../springspree/img/Pause.png";
 } else {
 vid.pause();
 pausediv.innerHTML = "Continue the video";
+pauseButton.src="../springspree/img/play.png";
 }
 })
 		</script>
