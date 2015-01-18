@@ -163,15 +163,16 @@ video#bgvid {
     height: 6%;
 
 }
-.stopfade { opacity: 0;
-            transition: 2s opacity;}
+.stopfade {
+    opacity: 0;
+    transition: 2s opacity;
+}
 #pausediv {
     color: #ffffff;
     position: absolute;
     bottom: 3%;
     right: 4%;
 }
-
 #sponsors {
     position: absolute;
      bottom: 10px;
@@ -179,13 +180,11 @@ video#bgvid {
     height: 10%;
     margin-left: 25%;
 }
-
 .sponsorimg {
     width: 8%;
     height: 60%;
     padding-left: 3%;
 }
-
 #sponsors2 {
      position: absolute;
      bottom: 10px;
