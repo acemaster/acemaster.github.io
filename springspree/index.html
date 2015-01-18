@@ -10,6 +10,13 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
         <script>
+        $.preloadImages = function() {
+  for (var i = 0; i < arguments.length; i++) {
+    $("<img />").attr("src", arguments[i]);
+  }
+}
+
+        $.preloadImages("../springspree/img/sponsors/Color/campusfrance.png","../springspree/img/sponsors/Color/CokeStudio.png","../springspree/img/sponsors/Color/eyetex.png","../springspree/img/sponsors/Color/RedBullEnergy.png","../springspree/img/sponsors/Color/sbh.png","../springspree/img/sponsors/Color/svaad.png","../springspree/img/sponsors/Color/ThePrincetonReview");
         function cfmo(image){
             var orginalsrc=image.src;
             var array=orginalsrc.split("/");
