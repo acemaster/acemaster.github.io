@@ -152,10 +152,7 @@ video#bgvid {
 
 }
 
-@media (min-width: 50em) and (max-width: 61.250em),@media (max-width: 49.938em),@media (min-width:32.5em) and (max-width: 49.938em),@media (min-width: 32.5em) and (max-width: 38.688em)  {
-html { background: url(../img/bg.jpg) #000 no-repeat center center fixed; }
-video#bgvid { display: none; }
-}
+
 
 #vidpause {
     position: absolute;
