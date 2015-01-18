@@ -9,6 +9,25 @@
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
+        <script>
+        function cfmo(image){
+            var orginalsrc=image.src;
+            var array=orginalsrc.split("/");
+            array[array.length-2]="Color";
+            var newsrc=array.join("/");
+            image.src=newsrc;
+        }
+        function cfmout(image){
+           var orginalsrc=image.src;
+            var array=orginalsrc.split("/");
+            array[array.length-2]="White";
+            var newsrc=array.join("/");
+            image.src=newsrc;
+        }
+
+
+
+        </script>
 	</head>
 	<body>
 		<div class="container">
@@ -66,9 +85,21 @@
 					</ul>
 				</nav>
 			</div>
-        <div style="z-index: 10000;">
-        <img src="img/sponsors/White/campusfrance.png">
-            </div>
+         <div id="sponsors">
+<img src="img/sponsors/White/campusfrance.png" class="sponsorimg" id="cf" onMouseOver="cfmo(this)" onMouseOut="cfmout(this)" >
+<img src="img/sponsors/White/CokeStudio.png" class="sponsorimg" id="cs" onMouseOver="cfmo(this)" onMouseOut="cfmout(this)"
+>
+<img src="img/sponsors/White/eyetex.png" class="sponsorimg" id="et" onMouseOver="cfmo(this)" onMouseOut="cfmout(this)"
+>
+<img src="img/sponsors/White/RedBullEnergy.png" class="sponsorimg" id="rbe" onMouseOver="cfmo(this)" onMouseOut="cfmout(this)"
+>
+<img src="img/sponsors/White/sbh.png" class="sponsorimg" style="height: 100%;" id="sbh" onMouseOver="cfmo(this)" onMouseOut="cfmout(this)"
+>
+<img src="img/sponsors/White/svaad.png" class="sponsorimg" id="svd" onMouseOver="cfmo(this)" onMouseOut="cfmout(this)"
+>
+<img src="img/sponsors/White/ThePrincetonReview.png" id="sponsorimg" id="tpr" onMouseOver="cfmo(this)" onMouseOut="cfmout(this)"
+>
+        </div>
 		</div><!-- /container -->
 		<script>
 			//  The function to change the class
@@ -124,7 +155,8 @@ vid.pause();
 pausediv.innerHTML = "Continue the video";
 pauseButton.src="../springspree/img/play.png";
 }
-})
+});
+
 		</script>
 	</body>
 </html>

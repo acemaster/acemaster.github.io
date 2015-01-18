@@ -24,7 +24,7 @@ body {
 	color: #ffffff;
 	background: url(../img/bg.jpg) no-repeat;
     height: 100%;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 a {
@@ -173,4 +173,27 @@ video#bgvid { display: none; }
     position: absolute;
     bottom: 3%;
     right: 4%;
+}
+
+#sponsors {
+    position: absolute;
+     bottom: 10px;
+    width: 100%;
+    height: 10%;
+    margin-left: 25%;
+}
+
+.sponsorimg {
+    width: 8%;
+    height: 60%;
+    padding-left: 3%;
+}
+
+#sponsors2 {
+     position: absolute;
+     bottom: 10px;
+    width: 100%;
+    height: 10%;
+    margin-left: 20%;
+    margin-bottom: 5%;
 }
