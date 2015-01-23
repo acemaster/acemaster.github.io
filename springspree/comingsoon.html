@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Coming Soon to a Browser Near You</title>
+		<link rel="stylesheet" type="text/css" href="css/stylecoming.css" />
+
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'></script>
+		<script type='text/javascript' src='js/jquery.tipsy.js'></script>
+		<script type='text/javascript'>
+		$(function() {
+			$('#tipsy').tipsy({fade: true, gravity: 's'});
+		});
+		</script>
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<div class="wrapper">
+			<img src="img/logogiant.png" style="position:relative;width:10%;height:10%;" alt="YourLogo" title="YourLogo"/>
+			<div class="hr"></div>
+			<h1>Coming Soon...Registrations for Springspree</h1>
+			<p>Unfortunately, we’re not quite ready yet. <strong> But, you can see our progress below:</strong></p>
+
+			<section class="progress">
+				<div class="progress-bar-container" id="tipsy" title="87% Complete"> <!-- Edit this title for the tooltip pop up -->
+					<article class="progress-bar" style="width:87%"  ></article> <!-- Edit the width percentage value to indicate progress -->
+				</div>
+				<article class="txt-launch-day-hat"></article>
+			</section>
+
+			<div class="hr"></div>
+
+
+		</div>
+	</body>
+</html>
