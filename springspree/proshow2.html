@@ -49,59 +49,62 @@
 		</style>
     </head>
 
-    <body>
+    <body style="overflow: hidden">
 		<div id="cc_menu" class="cc_menu">
 			<div class="cc_item" style="z-index:5; background: url(img/11.jpg); background-repeat:no-repeat;background-size:contain;background-position:center;" >
 				<img src="img/1.jpg" alt="image" />
 				<span class="cc_title">Coke Studio</span>
 				<div class="cc_submenu">
-					<ul>
-						<li class="cc_content_1">About</li>
-						<li class="cc_content_2">Ticket Price</li>
-					</ul>
+
+				</div>
+			</div>
+            <div class="cc_item" style="z-index:5; background: url(img/11.jpg); background-repeat:no-repeat;background-size:contain;background-position:center;" >
+				<img src="img/1.jpg" alt="image" />
+				<span class="cc_title">Coke Studio</span>
+				<div class="cc_submenu">
+
+				</div>
+			</div>
+            <div class="cc_item" style="z-index:5; background: url(img/11.jpg); background-repeat:no-repeat;background-size:contain;background-position:center;" >
+				<img src="img/1.jpg" alt="image" />
+				<span class="cc_title">Coke Studio</span>
+				<div class="cc_submenu">
+
+				</div>
+			</div>
+            <div class="cc_item" style="z-index:5; background: url(img/11.jpg); background-repeat:no-repeat;background-size:contain;background-position:center;" >
+				<img src="img/1.jpg" alt="image" />
+				<span class="cc_title">Coke Studio</span>
+				<div class="cc_submenu">
+
 				</div>
 			</div>
 			<div class="cc_item" style="z-index:4; background: url(img/22.jpg);background-repeat:no-repeat;background-size:contain;background-position:center;">
 				<img src="img/2.jpg" alt="image" />
 				<span class="cc_title">Allure</span>
-				<div class="cc_submenu">
-					<ul>
-						<li class="cc_content_1">About</li>
-						<li class="cc_content_2">Ticket Price</li>
-						
-					</ul>
-				</div>
 			</div>
 			<div class="cc_item" style="z-index:3;background: url(img/33.jpg);background-repeat:no-repeat;background-size:contain;background-position:center;">
 				<img src="img/3.jpg" alt="image" />
 				<span class="cc_title">Group Dance</span>
 				<div class="cc_submenu">
-					<ul>
-						<li class="cc_content_1">About</li>
-						<li class="cc_content_2">Ticket Price</li>
-					</ul>
+
 				</div>
 			</div>
 			<div class="cc_item" style="z-index:2; background: url(img/44.jpg);background-repeat:no-repeat;background-size:contain;background-position:center;">
 				<img src="img/4.jpg" alt="image" />
 				<span class="cc_title">Initiatives</span>
 				<div class="cc_submenu">
-					<ul>
-						<li class="cc_content_1">About</li>
-						<li class="cc_content_2">Ticket Price</li>
-					</ul>
+
 				</div>
 			</div>
 			<div class="cc_item" style="z-index:1; background: url(img/55.jpg);background-repeat:no-repeat;background-size:contain;background-position:center;">
 				<img src="img/5.jpg" alt="image" />
 				<span class="cc_title">World</span>
 				<div class="cc_submenu">
-					<ul>
-						<li class="cc_content_1">About</li>
-						<li class="cc_content_2">Ticket Price</li>
-					</ul>
+
 				</div>
 			</div>
+
 			<div id="cc_content" class="cc_content">
 				<span id="cc_back" class="cc_back">&lt;&lt; Go back</span>
 				<div class="cc_content_1">
@@ -164,9 +167,8 @@
 					clearTimeout(menu_time);
 					menu_time 	= setTimeout(function(){
 					//img
-					$this.find('img').stop().animate({'top':'0px'},400);
+					$this.find('img').stop().animate({'top':'0px'},200);
 					//cc_submenu ul
-					$this.find('.cc_submenu > ul').stop().animate({'height':'40%'},400);
 					},200);
 				}
 				
@@ -175,7 +177,7 @@
 					var $this = $(this);
 					clearTimeout(menu_time);
 					//img
-					$this.find('img').stop().animate({'top':'-100%'},400);
+					$this.find('img').stop().animate({'top':'-100%'},200);
 					//cc_submenu ul
 					$this.find('.cc_submenu > ul').stop().animate({'height':'0px'},400);
 				}

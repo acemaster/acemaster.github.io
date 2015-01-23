@@ -137,6 +137,9 @@ a, button {
 .nav li:nth-child(6n+6) {
 	background: rgb(21, 40, 54);
 }
+.nav li:nth-child(6n+7) {
+	background: rgb(20, 40, 44);
+}
 
 /* For screen bigger than 800px */
 @media (min-width: 50em) {
@@ -144,7 +147,7 @@ a, button {
 	/* Transforms the list into a horizontal navigation */
 	.nav li {
 		float: left;
-		width: 19.66666666666667%;
+		width: 13.66666666666667%;
 		text-align: center;
 		-webkit-transition: border .5s;
 		-moz-transition: border .5s;
@@ -194,6 +197,11 @@ a, button {
 	.no-touch .nav li:nth-child(6n+6) a:active,
 	.no-touch .nav li:nth-child(6n+6) a:focus {
 		border-bottom: 4px solid rgb(9, 18, 25);
+	}
+    .no-touch .nav li:nth-child(6n+7) a:hover,
+	.no-touch .nav li:nth-child(6n+7) a:active,
+	.no-touch .nav li:nth-child(6n+7) a:focus {
+		border-bottom: 4px solid rgb(9, 18, 15);
 	}
 
 	/* Placing the icon */
