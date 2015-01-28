@@ -515,3 +515,10 @@ a, button {
 
 
 
+
+.footerdiv {
+    float: left;
+    position: relative;
+    width: 30%;
+    height: 50%;
+}
