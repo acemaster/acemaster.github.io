@@ -282,3 +282,19 @@ ul, menu, dir {
 #networks .mail:hover {
 	color: #f39c12;
 }
+
+.imageback {
+    position: absolute;
+    z-index: 1000;
+    left: 0px;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.imagego {
+    position: absolute;
+    z-index: 1000;
+    left: 0px;
+    margin-left: 5%;
+    margin-top: 2.5%;
+}
