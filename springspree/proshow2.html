@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
     <head>
-        <title>ProShows</title>
+        <title>Spotlights</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
@@ -9,6 +9,7 @@
 		<script src="js/cufon-yui.js" type="text/javascript"></script>
 		<script src="js/Liberation_Sans.font.js" type="text/javascript"></script>
 	    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="css/circlenav.css" type="text/css">
 		<script type="text/javascript">
 			Cufon.replace('span');
 			Cufon.replace('li');
@@ -50,6 +51,20 @@
     </head>
 
     <body style="overflow: hidden">
+        <button id="expand-navigation"><img src="img/logotrans.png"></button>
+
+<section class="wrapper">
+  <ul>
+    <li><a href="#"><img src="img/icons/001.png"></a></li>
+    <li><a href="#"><img src="img/icons/home.png"></a></li>
+    <li><a href="#"><img src="img/icons/052.png"></a></li>
+    <li><a href="#"><img src="img/icons/about.png"></a></li>
+    <li><a href="#"><img src="img/icons/spot.png"></a></li>
+    <li><a href="#"><img src="img/icons/025.png"></a></li>
+  </ul>
+</section>
+
+<div class="overlay on-overlay"></div>
 		<div id="cc_menu" class="cc_menu">
 			<div class="cc_item" style="z-index:5; background: url(img/11.gif); background-repeat:no-repeat;background-size:contain;background-position:center;"  onclick="location.href='events.html';" >
 				<img src="img/ira.PNG" alt="image" />
@@ -120,7 +135,9 @@
 		</div>
         <!-- The JavaScript -->
         <script src="js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
+        <script src="js/circlenav.js" type="text/javascript"></script>
         <script type="text/javascript">
+
             $(".cc_menu").css("height",screen.availHeight-70);
 
             $(function() {

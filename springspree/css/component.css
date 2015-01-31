@@ -17,7 +17,7 @@
 	};
 }
 
-.icon-team, .icon-blog, .icon-home, .icon-portfolio, .icon-services, .icon-contact, .icon-menu {
+.icon-team, .icon-blog, .icon-home, .icon-portfolio, .icon-services, .icon-contact, .icon-menu, .icon-feed {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -54,6 +54,9 @@
 
 .icon-menu:before {
 	content: "\f0c9";
+}
+.icon-feed:before {
+    content: "\e91d";
 }
 
 a, li {
