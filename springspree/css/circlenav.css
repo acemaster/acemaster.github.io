@@ -135,7 +135,6 @@ button:hover, button:active, button:focus {
 }
 
 .overlay.on-overlay {
-  opacity: 1;
   pointer-events: auto;
 }
 
