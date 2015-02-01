@@ -44,11 +44,14 @@ button:hover, button:active, button:focus {
   border-radius: 50%;
   -webkit-transform: scale(0.1);
   -webkit-transition: all 0.3s ease;
+  -moz-transform: scale(0.1);
+  -moz-transition: all 0.3s ease;
 }
 
 .opened {
   border-radius: 50%;
   -webkit-transform: scale(1);
+  -moz-transform: scale(1);
 }
 
 .wrapper li {
@@ -63,6 +66,8 @@ button:hover, button:active, button:focus {
   margin-left: -10em;
   -webkit-transform-origin: 100% 100%;
   -webkit-transition: border 0.3s ease;
+ -moz-transform-origin: 100% 100%;
+  -moz-transition: border 0.3s ease;
 }
 
 .wrapper li a {
@@ -80,6 +85,8 @@ button:hover, button:active, button:focus {
   text-align: center;
   -webkit-transform: skew(-60deg) rotate(-75deg) scale(1);
   -webkit-transition: opacity 0.3s, color 0.3s;
+ -moz-transform: skew(-60deg) rotate(-75deg) scale(1);
+  -moz-transition: opacity 0.3s, color 0.3s;
 }
 
 .wrapper li a span {
@@ -89,26 +96,32 @@ button:hover, button:active, button:focus {
 
 .wrapper li:first-child {
   -webkit-transform: rotate(0deg) skew(60deg);
+    -moz-transform: rotate(0deg) skew(60deg);
 }
 
 .wrapper li:nth-child(2) {
   -webkit-transform: rotate(30deg) skew(60deg);
+   -moz-transform: rotate(30deg) skew(60deg);
 }
 
 .wrapper li:nth-child(3) {
   -webkit-transform: rotate(60deg) skew(60deg);
+   -moz-transform: rotate(60deg) skew(60deg);
 }
 
 .wrapper li:nth-child(4) {
   -webkit-transform: rotate(90deg) skew(60deg);
+    -moz-transform: rotate(90deg) skew(60deg);
 }
 
 .wrapper li:nth-child(5) {
   -webkit-transform: rotate(120deg) skew(60deg);
+    -moz-transform: rotate(120deg) skew(60deg);
 }
 
 .wrapper li:nth-child(6) {
   -webkit-transform: rotate(150deg) skew(60deg);
+    -moz-transform: rotate(150deg) skew(60deg);
 }
 
 .wrapper li:nth-child(odd) a {
