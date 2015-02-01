@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+video.bgvid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url(springspree/img/bg.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+</style>
+<script type="text/javascript" src="js/keydrown.js"></script>
+</head>
+<body>
+<video autoplay loop poster="springspree/img/bg.jpg" class="bgvid" >
+    <source src="springspree/img/video.webm" type="video/webm">
+ </video>
+<video autoplay loop poster="springspree/img/bg.jpg" class="bgvid" style="z-index: 0;" id="uppervid" >
+    <source src="springspree/img/video2.webm" type="video/webm">
+ </video>
+
+
+
+<script>
+var video= document.getElementById('uppervid');
+kd.A.down(function(){
+   video.style.opacity=0;
+});
+kd.A.up(function(){
+    video.style.opacity=1;
+    console.log("Hello");
+});
+kd.run(function () {
+  kd.tick();
+});
+
+    </script>
+
+
+</body>
+
+
+
+
+</html>
