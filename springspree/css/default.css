@@ -40,7 +40,7 @@ a:hover {
 .container > header {
 	width: 100%;
 	margin: 0 auto;
-	padding: 2em;
+	padding: 1em;
 }
 
 .main {
@@ -51,7 +51,7 @@ a:hover {
 .container > header {
 	text-align: center;
 	font-size: 16px;
-	padding: 4em 2em 3em;
+	padding: 2em 2em 3em;
 	background: rgba(0,0,0,0.01);
 }
 
@@ -194,4 +194,11 @@ video#bgvid {
     height: 10%;
     margin-left: 20%;
     margin-bottom: 5%;
+}
+
+#footerimg {
+    width: 100%;
+    height: 80%;
+    float: left;
+    margin-top: 3%;
 }
