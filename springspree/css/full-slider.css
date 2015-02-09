@@ -34,3 +34,44 @@ body {
 footer {
     margin: 50px 0;
 }
+
+#buttonbenny {
+    position: absolute;
+    left: 3% ;
+    bottom: 10px;
+    z-index: 1000;
+    width: 30%;
+    height: 50%;
+    -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s;
+    -moz-transition: width 1s, height 1s;
+
+}
+
+#buttonsun {
+     position: absolute;
+    right: 3% ;
+    bottom: 10px;
+    z-index: 1000;
+    width: 25%;
+    height: 50%;
+   -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s;
+    -moz-transition: width 1s, height 1s;
+}
+
+#buttonbenny:hover{
+    width: 35%;
+    height: 55%;
+}
+
+#buttonsun:hover{
+    width: 30%;
+    height: 55%;
+}
+#simple-menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 35;
+}
