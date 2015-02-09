@@ -524,6 +524,11 @@ a, button {
     position: relative;
     width: 32.999999999%;
     height: 50%;
+    opacity: 0.6;
+}
+.footerdiv:hover{
+    opacity: 1;
+
 }
 
 
