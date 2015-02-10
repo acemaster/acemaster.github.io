@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ProShows - SpringSpree</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+    <script>
+    function myFunction(url) {
+    location.href = url;
+}
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+    <a id="simple-menu" href="index.html"><img style="width: 50%; height: 50%;" src="img/home.png"></a>
+
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+
+
+        <!-- Wrapper for Slides -->
+        <div id="slideshow" class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/spotlights/slide 01.png');"></div>
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/spotlights/slide 02.png');"></div>
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/spotlights/slide 03.png');"></div>
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+        </div>
+         <img src="img/spotlights/bennybutton.png" id="buttonbenny" onclick="myFunction('#')">
+          <img src="img/spotlights/sunburnbutton.png" id="buttonsun" onclick="myFunction('#')">
+        <!-- Controls -->
+
+
+    </header>
+
+    <!-- Page Content -->
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $(document).ready(function() {
+  $('#simple-menu').sidr();
+  });
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    });
+    $("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .next()
+    .fadeIn(500)
+    .end()
+    .appendTo('#slideshow');
+},  6000);
+    </script>
+
+</body>
+
+</html>
