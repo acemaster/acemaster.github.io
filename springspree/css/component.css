@@ -700,3 +700,34 @@ border-right: 1px solid  rgba(0,0,0,0.15);
     padding-left: 1%;
     padding-right: 1%;
 }
+
+#front {
+    position: absolute;
+    left:60px;
+    top: 30px;
+    z-index:5;
+    width: 6%;
+    height: 12%;
+    opacity: 0.6;
+     -webkit-transition: width 1s, height 1s, opacity 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s, opacity 1s;
+    -moz-transition: width 1s, height 1s, opacity 1s;
+
+}
+#front:hover{
+     width: 10%;
+    height: 20%;
+    opacity: 1;
+}
+
+.h2index {
+    font-size: 1.625em;
+    line-height: 1.3;
+    margin: 0;
+    font-weight: 300;
+    position: absolute;
+    left:60px;
+    top: 25%;
+    opacity: 0;
+
+}
