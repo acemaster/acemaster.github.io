@@ -17,7 +17,7 @@
 	};
 }
 
-.icon-team, .icon-blog, .icon-home, .icon-portfolio, .icon-services, .icon-contact, .icon-menu, .icon-feed {
+.icon-aboutus, .icon-spotlights, .icon-events, .icon-initiatives, .icon-workshops, .icon-registrations, .icon-proshows, .icon-feed {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -28,32 +28,32 @@
 	-webkit-font-smoothing: antialiased;
 }
 
-.icon-team:before {
-	content: "\e000";
+.icon-aboutus:before {
+	content: "\e009";
 }
 
-.icon-blog:before {
-	content: "\e001";
-}
-
-.icon-home:before {
+.icon-spotlights:before {
 	content: "\e002";
 }
 
-.icon-portfolio:before {
-	content: "\e003";
-}
-
-.icon-services:before {
-	content: "\e004";
-}
-
-.icon-contact:before {
+.icon-events:before {
 	content: "\e005";
 }
 
-.icon-menu:before {
-	content: "\f0c9";
+.icon-initiatives:before {
+	content: "\e006";
+}
+
+.icon-workshops:before {
+	content: "\e001";
+}
+
+.icon-registrations:before {
+	content: "\e007";
+}
+
+.icon-proshows:before {
+	content: "\e003";
 }
 .icon-feed:before {
     content: "\e91d";
