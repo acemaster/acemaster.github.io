@@ -33,12 +33,9 @@
             var newsrc=array.join("/");
             image.src=newsrc;
         }
-
-
-
         </script>
 	</head>
-	<body>
+	<body onload="disable_scroll()">
       <audio controls autoplay loop id="music" style="display: none">
   <source src="../springspree/img/bgsound.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
@@ -126,6 +123,7 @@
        <div class="footerdiv"><a style="float:right;" href="events.springspree.com/home/sponsors" class="action-button shadow animate red">Campus Ambassadors</a> <a href="events.springspree.com/home/ca" style="float:right;" class="action-button shadow animate blue">Sponsors</a></div>
         </div>
 		</div><!-- /container -->
+
 		<script>
 			//  The function to change the class
 			var changeClass = function (r,className1,className2) {
@@ -189,10 +187,48 @@ pauseButton.src="../springspree/img/play.png";
 }
 });
 */
-imageidol.onmouseover=function(){h2.style.opacity="1";};
-imageidol.onmouseout=function(){h2.style.opacity="0";};
+/*imageidol.onmouseover=function(){h2.style.opacity="1";};
+imageidol.onmouseout=function(){h2.style.opacity="0";};*/
 function myFunction(url) {
     window.open(url,"_blank");
+}
+// left: 37, up: 38, right: 39, down: 40,
+// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+var keys = [37, 38, 39, 40];
+
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+      e.preventDefault();
+  e.returnValue = false;
+}
+
+function keydown(e) {
+    for (var i = keys.length; i--;) {
+        if (e.keyCode === keys[i]) {
+            preventDefault(e);
+            return;
+        }
+    }
+}
+
+function wheel(e) {
+  preventDefault(e);
+}
+
+function disable_scroll() {
+  if (window.addEventListener) {
+      window.addEventListener('DOMMouseScroll', wheel, false);
+  }
+  window.onmousewheel = document.onmousewheel = wheel;
+  document.onkeydown = keydown;
+}
+
+function enable_scroll() {
+    if (window.removeEventListener) {
+        window.removeEventListener('DOMMouseScroll', wheel, false);
+    }
+    window.onmousewheel = document.onmousewheel = document.onkeydown = null;
 }
 
 		</script>
