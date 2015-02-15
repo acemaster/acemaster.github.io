@@ -37,37 +37,35 @@ footer {
 
 #buttonbenny {
     position: absolute;
-    left: 3% ;
-    bottom: 10px;
+    left:10.8% ;
+    bottom: 0px;
     z-index: 1000;
-    width: 30%;
-    height: 50%;
-    -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
-    transition: width 1s, height 1s;
-    -moz-transition: width 1s, height 1s;
+    width: 80%;
+    height: 100%;
+    -webkit-transition: left 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: left 1s, height 1s;
+    -moz-transition: left 1s, height 1s;
 
 }
 
 #buttonsun {
      position: absolute;
-    right: 12% ;
-    bottom: 20px;
-    z-index: 1000;
-    width: 46%;
-    height: 90%;
-   -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
-    transition: width 1s, height 1s;
-    -moz-transition: width 1s, height 1s;
+    right: 9.2% ;
+    bottom: 0px;
+    z-index: 1005;
+    width: 80%;
+    height: 100%;
+   -webkit-transition: right 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: right 1s, height 1s;
+    -moz-transition: right 1s, height 1s;
 }
 
 #buttonbenny:hover{
-    width: 35%;
-    height: 55%;
+    left:0% ;
 }
 
 #buttonsun:hover{
-    width: 40%;
-    height: 70%;
+    right:0%;
 }
 #simple-menu {
     position: absolute;
