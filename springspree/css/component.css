@@ -731,3 +731,25 @@ border-right: 1px solid  rgba(0,0,0,0.15);
     opacity: 0;
 
 }
+
+#countdown-holder {
+    position: absolute;
+    text-transform: capitalize;
+    font-size: 5.8em;
+    right:12%;
+    top: 0px;
+    z-index:5;
+    font-weight: 200;
+    opacity: 0.8;
+}
+
+#countdown-holder2 {
+     position: absolute;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    right:10%;
+    top: 13%;
+    z-index:5;
+    font-weight: 200;
+    opacity: 0.6;
+}
