@@ -735,7 +735,7 @@ border-right: 1px solid  rgba(0,0,0,0.15);
 #countdown-holder {
     position: absolute;
     text-transform: capitalize;
-    font-size: 5.8em;
+    font-size: 6.3vmax;
     right:12%;
     top: 0px;
     z-index:5;
@@ -746,7 +746,7 @@ border-right: 1px solid  rgba(0,0,0,0.15);
 #countdown-holder2 {
      position: absolute;
     text-transform: capitalize;
-    font-size: 1.2em;
+    font-size: 1.4vmax;;
     right:10%;
     top: 13%;
     z-index:5;
