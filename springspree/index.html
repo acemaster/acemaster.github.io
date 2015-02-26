@@ -54,6 +54,7 @@
              <img src="img/homepage/spree.png" style="position: absolute; right:0px; top: 0px; z-index:5; width:10%; height: 20%;">
               <h1 id="countdown-holder" style="font-family: 'Oswald', serif; font"></h1>
               <h2 id="countdown-holder2" style="font-family: 'Oswald', serif; font">hours</h2>
+              <a style="position: absolute; right:12%; top: 14%; z-index:10; opacity: 0" href="schedule.springspree.in" class="action-button shadow animate blue" id="eventsc">Event Schedule</a>
 			<header> 
 				<img style="width:44%;height:44%; margin-right:25%;" src="../springspree/img/homepage/main2.png">
                 <img src="img/homepage/foodc.png" style="width:44%;height:44%; margin-right:0%; margin-top:10px;">
@@ -253,11 +254,21 @@ clock2=document.getElementById("countdown-holder2")
  }
  else
  {
-     clock.innerHTML = countdown(targetDate).hours + " hours to go";
+     if(countdown(targetDate).hours>0 || countdown(targetDate).minutes)
+     {
+     clock.innerHTML="0 <span style='font-size:0.3em;'>days to go</span>";
+     clock2.innerHTML = countdown(targetDate).hours + " Hours "+countdown(targetDate).minutes + " minutes";
   console.log(countdown(targetDate).hours);
   setInterval(function(){
-    clock.innerHTML = countdown(targetDate).hours+ " hours to go";
+    clock2.innerHTML = countdown(targetDate).hours + " Hours "+countdown(targetDate).minutes + " minutes";
   }, 1000);
+     }
+     else
+     {
+         clock.style.opacity=0;
+         clock2.style.opacity=0;
+         document.getElementById('eventsc').style.opacity=1;
+     }
  }
 
 clock.onmouseover=function(){clock2.style.opacity=0.9;};
