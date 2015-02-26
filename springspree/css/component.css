@@ -742,7 +742,7 @@ border-right: 1px solid  rgba(0,0,0,0.15);
     top: 0px;
     z-index:5;
     font-weight: 200;
-    opacity: 0.8;
+    opacity: 0;
 }
 
 #countdown-holder2 {
@@ -753,5 +753,7 @@ border-right: 1px solid  rgba(0,0,0,0.15);
     top: 13%;
     z-index:5;
     font-weight: 200;
-    opacity: 0.6;
+    opacity: 0;
 }
+
+
