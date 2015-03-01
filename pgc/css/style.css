@@ -23,3 +23,23 @@ right: 0px;
     opacity: 0.6;
 
 }
+
+#pgc2 {
+    position: absolute;
+    bottom: 40%;
+    left: 6%;
+    width: 20%;
+    height: 40%;
+    opacity: 0.9;
+}
+
+.link {
+    text-align: center;
+    font-family: 'Oswald', serif;
+}
+
+.link p{
+    color: #f48f17;
+    font-size: 3em;
+
+}
