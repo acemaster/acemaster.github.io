@@ -1,5 +1,6 @@
 html{
-    background-color: black;
+    background: url(../img/leather_background.jpg);
+    background-size: cover;
     overflow: hidden;
 
 }
@@ -7,5 +8,18 @@ html{
 #pgc{
   width: 40%;
     height: 100%;
+
+}
+
+.right
+{
+   position: absolute;
+   top: 0px;
+right: 0px;
+   background: black;
+   float: right;
+    width: 20%;
+    height: 300%;
+    opacity: 0.6;
 
 }
