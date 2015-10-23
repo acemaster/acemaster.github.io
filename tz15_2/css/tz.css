@@ -1,0 +1,18 @@
+.content-switch{
+	display: none;
+}
+
+
+.menu-button{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 10000;
+}
+
+.menu-button2{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 10000;
+}
