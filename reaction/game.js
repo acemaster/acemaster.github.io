@@ -10,6 +10,19 @@ $(document).ready(function(){
 			else
 				cp2=cp2+1;
 		}
+		if(cp1 == 100)
+			return 1;
+		else if(cp2 == 100)
+			return 2;
+		else if(cp1>cp2)
+			return 3;
+		else
+			return 4;
+	}
+
+
+	function init(){
+		
 	}
 
 
