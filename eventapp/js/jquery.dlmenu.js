@@ -174,8 +174,6 @@
 					self.$menu.off( self.transEndEventName );
 					self._resetMenu();
 				};
-			
-			this.$menu.removeClass( 'dl-menuopen' );
 			this.$menu.addClass( 'dl-menu-toggle' );
 			this.$trigger.removeClass( 'dl-active' );
 			

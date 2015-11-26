@@ -16,7 +16,7 @@
 		<div class="pt-triggers">
 			<div id="dl-menu" class="dl-menuwrapper">
 				<button class="dl-trigger">Choose a transition</button>
-				<ul class="dl-menu">
+				<ul class="dl-menu dl-menuopen">
 							<li data-animation="36"><a id="button-text" class="waves-effect waves-light btn" href="#">Contact Us</a></li>
 							
 				</ul>
@@ -25,31 +25,78 @@
 <div id="pt-main" class="pt-perspective">
 			<div id="index" class="pt-page pt-page-1">
 						<div class="row" align="center">
-							<div class="col s12 l6 m6"> <h1 style="text-align: left; padding-left: 20%;"><span>Introducing</span><strong>Event</strong> Hub</h1>
-							<img id="pt-logo" src="img/logo.png"> </div>
 							<div class="col s12 l6 m6">
-								<iframe width="560" height="515" src="https://www.youtube.com/embed/TaXr5MVjIK4" frameborder="0" allowfullscreen id="pt-video"></iframe>
+								 <h1 style="text-align: left; padding-left: 20%;"><span>Introducing</span><strong>Event</strong>Hub</h1>
+								<img id="pt-logo" src="img/logo.png">
+						    </div>
+							<div id="video_div" class="col s12 l6 m6">
+								<a href="https://play.google.com/store/apps/details?id=com.overknighters.application.eventhub"><img src="img/google_play.png" id="play_store"></a>
+								<div id="eh_video" class="pt-video">
+								<embed id="my-video" frameborder="0" width="100%" webkitallowfullscreen mozallowfullscreen allowfullscreen allowfullscreen="true" allowscriptaccess="always" quality="high" bgcolor="#000000" name="my-video" style="" src="http://www.youtube.com/v/TaXr5MVjIK4?enablejsapi=1&version=3&playerapiid=ytplayer" type="application/x-shockwave-flash">
+								</div>
 							</div>
 						</div>
 			</div>
-			<div id="contact" class="pt-page pt-page-2"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
+			<div id="contact" class="pt-page pt-page-2">
+				<h1 style="text-align: left; padding-left: 10%; padding-top: 5%;"><span>Want to</span><strong>Contact </strong> Us?</h1>
+				<div class="container">
+				<div class="row">
+					<form action="//formspree.io/vivekhtc25@gmail.com"
+					method="POST" class="col s12">
+					<div class="row">
+						<div class="input-field col s12">
+						<input placeholder="Your Name" id="first_name" type="text" name="name">
+						<label for="first_name">Your Name</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+						<input placeholder="email" id="Email" type="text" name="_replyto">
+						<label for="Email">Your Email</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+						<textarea id="textarea1" class="materialize-textarea" name="feedback"></textarea>
+          				<label for="textarea1">Your Feedback</label>
+						</div>
+					</div>
+					<div class="row">
+						<input type="submit" value="Send" class="waves-effect waves-light btn col s12">
+					</div>
+				</form>
+				</div>
+				</div>
+			</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script src="js/jquery.dlmenu.js"></script>
 <script src="js/pagetransitions.js"></script>
 <script type="text/javascript">
+function toggleVideo(state) {
+    // if state == 'hide', hide. Else: show video
+    var div = document.getElementById("video_div");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    div.style.display = state == 'hide' ? 'none' : '';
+    func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+}
 $(document).ready(function () {
 	$('.dl-trigger').hide();
 	$('.dl-trigger').click();
-$('#button-text').click(function(){
+	$('#button-text').click(function(){
 	if($('#index').hasClass('pt-page-current') == true){
 		$('#button-text').html('Back to Front page');
 		console.log("True");
+		toggleVideo('hide');
 	}
-	else{
+	if($('#contact').hasClass('pt-page-current') == true){
 		$('#button-text').html('Contact Us');
+		console.log("True");
+		toggleVideo('show');
 	}
+	// console.log($(window).width());
 
 });
 
