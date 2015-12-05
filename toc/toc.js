@@ -7,20 +7,22 @@ $(document).ready(function(){
 };
 	var statearr=[];
 	var variablesarr=[];
-	var no_of_states=1;
-	var no_of_variables=1;
+	var tape_count=0;
+	var no_of_states=0;
+	var no_of_variables=0;
 	var col='<td id="statevariable{0}{1}">{2}</td>';
 	var input='<input type="text" id="variable{0}" placeholder="Next State"><input type="text" id="variablereplace{0}" placeholder="Replacement"><select id="variabledir{0}"><option value="left">Left</option><option value="right">Right</option></select>';
 	var row='<tr id="state{0}">{1}</tr>';
+	var tapeele='<input type="text" id="tape{0}">';
 	function add_state() {
 		htmlstr="";
 		statearr.push($('#newstate').val());
 		console.log(statearr);
-		if(no_of_variables == 1 && no_of_states == 1){
+		if(no_of_variables == 0 && no_of_states == 0){
 			variablesarr.push($('#newvariable').val());
 			console.log(variablesarr);
 		}
-		for (var i =1;i<=no_of_variables;i++) {
+		for (var i =0;i<=no_of_variables;i++) {
 			tempstr=input.format(i);
 			htmlstr=htmlstr+col.format(no_of_states,i,tempstr);
 		};
@@ -36,7 +38,7 @@ $(document).ready(function(){
 		variablesarr.push($('#newvariable').val());
 		console.log(variablesarr);
 		tempstr=input.format(no_of_variables);
-		for (var i = 1; i <no_of_states; i++) {
+		for (var i = 0; i <=no_of_states; i++) {
 			htmlstr=col.format(i,no_of_variables,tempstr);
 			$('#state'+i).append(htmlstr);
 		};
@@ -45,6 +47,18 @@ $(document).ready(function(){
 	// add_state();
 	// add_variable();
 
+	function add_tape(){
+		tape_count=tape_count+1;
+		tempstr=tapeele.format(tape_count);
+		$('#tape').append(tempstr);
+	}
+
+	function rem_tape(){
+		tempstr=tapeele.format(tape_count);
+		$('#tape'+tape_count).remove();
+		tape_count=tape_count-1;
+	}
+
 	$('#addstate').click(function(){
 		add_state();
 	});
@@ -52,4 +66,13 @@ $(document).ready(function(){
 	$('#addvariable').click(function(){
 		add_variable();
 	});
+
+	$('#addtape').click(function(){
+		add_tape();
+	})
+
+	$('#subtracttape').click(function(){
+		rem_tape();
+	})
+	add_tape();
 });
