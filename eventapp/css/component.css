@@ -74,6 +74,9 @@ html, body { height: 100%; }
 	padding-bottom: 10%;
 }
 
+#video-div{
+	height: 100%;
+}
 
 #play_store{
 	padding-top: 10%;
