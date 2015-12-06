@@ -1,0 +1,18 @@
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	
+	border-top: 10px solid #000;
+}
+
+
+[id^=tape]{
+	width: 50px;
+}
+
+
+#pointer td{
+	width: 50px;
+}

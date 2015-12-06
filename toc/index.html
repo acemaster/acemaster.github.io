@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Turings machine simulation</title>
+	<link rel="stylesheet" type="text/css" href="custom.css">
 </head>
 <body>
 <h1>Turing machine simulation</h1>
@@ -16,8 +17,11 @@
 
 <table id="turing_strip" border="1">
 <!--The turing machine tape will be here -->
-<tr><td><button id="subtracttape">-</button></td><td id="tape"><!--The turing machine tape comes here --></td><td><button id="addtape">+</button></td>
+<tr id="pointer"><td></td><td id="lastpointer"></td></tr>
+<tr id="tape"><td><button id="subtracttape">-</button></td><!--The turing machine tape comes here --><td id="lasttape"><button id="addtape">+</button></td>
 </table>
+
+
 
 
 

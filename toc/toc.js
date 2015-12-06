@@ -13,7 +13,8 @@ $(document).ready(function(){
 	var col='<td id="statevariable{0}{1}">{2}</td>';
 	var input='<input type="text" id="variable{0}" placeholder="Next State"><input type="text" id="variablereplace{0}" placeholder="Replacement"><select id="variabledir{0}"><option value="left">Left</option><option value="right">Right</option></select>';
 	var row='<tr id="state{0}">{1}</tr>';
-	var tapeele='<input type="text" id="tape{0}">';
+	var tapeele='<td id="tape{0}"><input type="text"></td>';
+	var pointerele='<td id="pointer{0}" align="center"><div id="arrow{0}" class="arrow-down"></div></td>'
 	function add_state() {
 		htmlstr="";
 		statearr.push($('#newstate').val());
@@ -50,12 +51,21 @@ $(document).ready(function(){
 	function add_tape(){
 		tape_count=tape_count+1;
 		tempstr=tapeele.format(tape_count);
+		pointerstr=pointerele.format(tape_count);
 		$('#tape').append(tempstr);
+		$('#pointer').append(pointerstr);
+		if(tape_count != 1){
+			console.log(tape_count);
+			$('#arrow'+tape_count).hide();
+		} 
+		 $('#tape').append($('#lasttape'));
+		 $('#pointer').append($('#lastpointer'));
 	}
 
 	function rem_tape(){
 		tempstr=tapeele.format(tape_count);
 		$('#tape'+tape_count).remove();
+		$('#pointer'+tape_count).remove();
 		tape_count=tape_count-1;
 	}
 
