@@ -19,7 +19,7 @@ $(document).ready(function(){
 	var no_of_states=0;
 	var no_of_variables=0;
 	var col='<td id="statevariable{0}{1}">{2}</td>';
-	var input='<div class="form-group"><input type="text" class="form-control" id="variable{0}{1}" placeholder="Next State"></div><div class="form-group"><input type="text" class="form-control" id="variablereplace{0}{1}" placeholder="Replacement"></div><div class="form-group"><select class="form-control" id="variabledir{0}{1}"><option value="left">Left</option><option value="right">Right</option></select></div>';
+	var input='<div class="form-group col-md-4"><input type="text" class="form-control" id="variable{0}{1}" placeholder="Next State"></div><div class="form-group col-md-4"><input type="text" class="form-control" id="variablereplace{0}{1}" placeholder="Replacement"></div><div class="form-group col-md-4"><select class="form-control" id="variabledir{0}{1}"><option value="left">Left</option><option value="right">Right</option></select></div>';
 	var row='<tr id="state{0}">{1}</tr>';
 	var variable_name='<td align="center" >{0}</td>';
 	var state_name='<td>{0}</td>';
@@ -123,6 +123,7 @@ $(document).ready(function(){
 		var nextstate=$('#variable'+sindex+vindex).val();
 		var nextvalue=$('#variablereplace'+sindex+vindex).val();
 		var nextdir=$('#variabledir'+sindex+vindex).val();
+		$('#currentstateh1').html("Current State is: "+nextstate);
 		if(nextvalue == ''){
 			alert("No state from here turing machine ended");
 		}
