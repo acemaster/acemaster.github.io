@@ -7,6 +7,7 @@ $(document).ready(function(){
         });
 	};
 
+	var mytimer="";
 	var simulatearray=[1,'q0'];
 	var prevsimulatearray=[1,'q0'];
 	var prevvalue="";
@@ -171,6 +172,21 @@ $(document).ready(function(){
 		}
 		$('#arrow'+simulatearray[0]).show();
 	})
+
+	function simulatefunc() {
+		prevsimulatearray=simulatearray;
+		simulatearray=simulate(simulatearray);
+		console.log(simulatearray);
+		if(simulatearray[1] == 'qf'){
+			clearInterval(mytimer);
+		}
+	}
+
+	$('#simulateit').click(function(){
+		mytimer=setInterval(simulatefunc,2000);
+	})
+
+
 	$('#variable_list').hide();
 	add_tape();
 });
